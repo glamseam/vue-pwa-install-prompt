@@ -49,7 +49,7 @@ In `Comp.vue`
 <script lang="ts" setup>
 import { usePwaInstallPrompt } from '@d-gs/vue-pwa-install-prompt'
 
-const showPrompt = () => {
+const showPrompt = async () => {
   const res = await pwaInstallPrompt.actions.showPrompt()  // res: 'accepted' | 'dismissed' | undefined
 
   if (res === 'accepted') {
