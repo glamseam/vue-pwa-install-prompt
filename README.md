@@ -10,6 +10,15 @@ npm i @d-gs/vue-pwa-install-prompt
 
 # Usage
 
+In `index.html`
+
+```html
+  <head>
+    ...
+    <link rel="manifest" href="/manifest.webmanifest" />
+  </head>
+```
+
 In `app.ts`
 
 ```ts
