@@ -1,0 +1,5 @@
+{
+    "extends": [
+        "@d-gs/eslint-config"
+    ]
+}

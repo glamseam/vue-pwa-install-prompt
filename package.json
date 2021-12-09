@@ -1,0 +1,42 @@
+{
+    "name": "@d-gs/vue-pwa-install-prompt",
+    "version": "0.1.2",
+    "description": "PWA Install Prompt For Vue3.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "author": "__d",
+    "license": "MIT",
+    "keywords": [
+        "vue",
+        "plugin",
+        "pwa",
+        "install",
+        "prompt"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/glamseam/vue-pwa-install-prompt.git"
+    },
+    "bugs": {
+        "url": "https://github.com/glamseam/vue-pwa-install-prompt/issues"
+    },
+    "scripts": {
+        "prebuild": "rimraf ./dist",
+        "build": "tsc",
+        "pub": "npm run build && npm publish --access=public"
+    },
+    "peerDependencies": {
+        "axios": "^0.24.0",
+        "vue": "^3.0.0"
+    },
+    "devDependencies": {
+        "@d-gs/eslint-config": "^0.1.10",
+        "eslint": "^8.4.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.5.2",
+        "vue": "^3.2.24"
+    }
+}
