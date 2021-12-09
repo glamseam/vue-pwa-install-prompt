@@ -59,14 +59,15 @@ In `Comp.vue`
 import { usePwaInstallPrompt } from '@d-gs/vue-pwa-install-prompt'
 
 const showPrompt = async () => {
-  const res = await pwaInstallPrompt.actions.showPrompt()  // res: 'accepted' | 'dismissed' | undefined
+  const outcome = await pwaInstallPrompt.actions.showPrompt()
+  // outcome: 'accepted' | 'dismissed' | undefined
 
-  if (res === 'accepted') {
+  if (outcome === 'accepted') {
     // Do something
     return
   }
 
-  if (res === 'dismissed') {
+  if (outcome === 'dismissed') {
     // Do something
     return
   }
