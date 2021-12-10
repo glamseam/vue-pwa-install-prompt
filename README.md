@@ -58,6 +58,7 @@ In `Comp.vue`
 <script lang="ts" setup>
 import { usePwaInstallPrompt } from '@d-gs/vue-pwa-install-prompt'
 
+const pwaInstallPrompt = usePwaInstallPrompt()
 const showPrompt = async () => {
   const outcome = await pwaInstallPrompt.actions.showPrompt()
   // outcome: 'accepted' | 'dismissed' | undefined
