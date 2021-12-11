@@ -44,13 +44,13 @@ export const pwaInstallPrompt = () => {
     }
 }
 
-const PwaInstallPromptKey: InjectionKey<PwaInstallPrompt> = Symbol('PwaInstallPrompt')
+const pwaInstallPromptKey: InjectionKey<PwaInstallPrompt> = Symbol('PwaInstallPrompt')
 
 export const usePwaInstallPrompt = () => {
-    const injected = inject(PwaInstallPromptKey)
+    const injected = inject(pwaInstallPromptKey)
 
     if (!injected) {
-        throw new Error(`${PwaInstallPromptKey} is not provided`)
+        throw new Error(`${pwaInstallPromptKey} is not provided`)
     }
 
     return injected
@@ -58,6 +58,6 @@ export const usePwaInstallPrompt = () => {
 
 export const pluginPwaInstallPrompt: Plugin = {
     install: (app) => {
-        app.provide(PwaInstallPromptKey, pwaInstallPrompt())
+        app.provide(pwaInstallPromptKey, pwaInstallPrompt())
     }
 }
