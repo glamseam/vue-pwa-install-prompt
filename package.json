@@ -1,6 +1,6 @@
 {
     "name": "@d-gs/vue-pwa-install-prompt",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "PWA Install Prompt For Vue3.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
