@@ -1,6 +1,6 @@
 {
     "name": "@d-gs/vue-pwa-install-prompt",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "PWA Install Prompt For Vue3.",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -29,7 +29,6 @@
         "pub": "npm run build && npm publish --access=public"
     },
     "peerDependencies": {
-        "axios": "^0.24.0",
         "vue": "^3.0.0"
     },
     "devDependencies": {
